@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:notesapp/views/widget/custom_search_icon.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -15,8 +16,10 @@ class CustomAppBar extends StatelessWidget {
             fontSize: 30,
           ),
         ),
-        CustomSearchIcon()
+        CustomSearchIcon(),
       ],
     );
   }
 }
+
+
