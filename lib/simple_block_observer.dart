@@ -9,7 +9,7 @@ class SimbleBlockObserver implements BlocObserver {
 
   @override
   void onClose(BlocBase bloc) {
-    // TODO: implement onClose
+    debugPrint('Close = $bloc');
   }
 
   @override
