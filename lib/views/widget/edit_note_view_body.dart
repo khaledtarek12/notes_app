@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:notesapp/constant.dart';
 import 'package:notesapp/cubits/notes_cubit_cubit.dart';
 import 'package:notesapp/models/note_model.dart';
+import 'package:notesapp/views/widget/colors_listview.dart';
 import 'package:notesapp/views/widget/custom_app_bar.dart';
 import 'package:notesapp/views/widget/custom_text_filed.dart';
+import 'package:notesapp/views/widget/list_color_view_for_edit_note_page.dart';
 
 class EditNoteViewBody extends StatefulWidget {
   const EditNoteViewBody({super.key, required this.noteModel});
@@ -53,10 +56,11 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
               subTitle = value;
             },
           ),
+          const SizedBox(height: 20),
+          EditCircleListColorView(noteModel: widget.noteModel),
+          const SizedBox(height: 20),
         ],
       ),
     );
   }
 }
-
-
